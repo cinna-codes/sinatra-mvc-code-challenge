@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<h2>Today's Teas</h2>
+<ul>
+<% Tea.all.each do |tea| %>
+<li><%= "#{tea.name} - #{tea.strain} - #{tea.price}" %></li>
+<% end %></ul>
